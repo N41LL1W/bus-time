@@ -9,19 +9,19 @@ const HorarioTable = ({ horarios }: HorarioItemProps) => (
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell>Itinerário</TableCell>
-        <TableCell>Dia da Semana</TableCell>
-        <TableCell>Horário</TableCell>
-        <TableCell>Trajeto</TableCell>
+        <TableCell className="text-left">Itinerário</TableCell> {/* Alinhado à esquerda */}
+        <TableCell className="text-right">Dia da Semana</TableCell> {/* Alinhado à direita */}
+        <TableCell className="text-right">Horário</TableCell> {/* Alinhado à direita */}
+        <TableCell className="text-right">Trajeto</TableCell> {/* Alinhado à direita */}
       </TableRow>
     </TableHead>
     <TableBody>
       {horarios.map((horario) => (
         <TableRow key={horario.id}>
-          <TableCell>{horario.itinerario}</TableCell>
-          <TableCell>{horario.diaDaSemana}</TableCell>
-          <TableCell>{horario.horario}</TableCell>
-          <TableCell>{horario.trajeto}</TableCell>
+          <TableCell className="text-left">{horario.itinerario}</TableCell>
+          <TableCell className="text-right">{horario.diaDaSemana}</TableCell>
+          <TableCell className="text-right">{horario.horario}</TableCell>
+          <TableCell className="text-right">{horario.trajeto}</TableCell>
         </TableRow>
       ))}
     </TableBody>

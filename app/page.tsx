@@ -7,8 +7,12 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Horarios />
-      <WeatherComponent />
+        <div>
+          <div className="flex border-x-4">
+            <Horarios />
+            <WeatherComponent />
+          </div>
+        </div>
       <Footer />
     </div>
   );
